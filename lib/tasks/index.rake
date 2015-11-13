@@ -1,3 +1,5 @@
+require 'elasticsearch/rails/tasks/import'
+
 namespace :index do
   desc "导入相关模型的ElasticSearch索引"
   task :import => [:environment] do
